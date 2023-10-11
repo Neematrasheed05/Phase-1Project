@@ -17,16 +17,30 @@ body{
     margin: 8px;
     border: 1px solid #cccccc;
     border-radius: 4px;
-    }
-    #search-section span {
+}
+#search-section span {
     background-color: rgb(250, 12, 143);
     padding: 10px 10px;
     margin: 0px 5px;
     color: white;
     border-radius: 10px;
     cursor: pointer;
-    }
-    #search-section span:hover {
+}
+#search-section span:hover {
     background-color: rgba(243, 161, 209, 0.5);
-    }
+}
+#all-products {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+}
+.a-product {
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 20px;
+}
+        
     
