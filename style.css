@@ -8,3 +8,24 @@ body{
   padding: 10px;
   text-align: center;
 }
+#search-section{
+    margin-top: 10px;
+    padding: 10px;
+}
+#search-section input {
+    padding: 12px 12px;
+    margin: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+  }
+  #search-section span {
+    background-color: rgb(250, 12, 143);
+    padding: 10px 10px;
+    margin: 0px 5px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  #search-section span:hover {
+    background-color: rgba(243, 161, 209, 0.5);
+  }
