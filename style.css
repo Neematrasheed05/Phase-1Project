@@ -1,3 +1,10 @@
 body{
-    background-color: rgb(237, 181, 248);
+    background-color: rgb(243, 164, 210);
+}
+#top-bar{
+  color: rgb(14, 13, 13);
+  font-size: xx-large;
+  font-weight: 900;
+  padding: 10px;
+  text-align: center;
 }
