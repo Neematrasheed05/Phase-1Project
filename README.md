@@ -35,3 +35,8 @@ Makeup Api enables a user to key in a specific makeup product and brands they wo
 -   ### To search for the “lipsticks” by the brand “covergirl”, you would append 'brand=covergirl' and '&product_type=lipstick'. For example:
     
 ![image of nail polish](http://makeup-api.herokuapp.com/assets/nail-polish-4c7ee1a5f7a5cbaff9757c3bcfa4f6e89d7a6f2ffc49d267e04e010ba94cfd7c.png)
+# *My Make-up App functionality*
+
+ - You can search for a make-up Product i.e "Foundation"
+ - You can move from one page to another to view the list of products and their price tag
+ - You can also see the product's Image 
