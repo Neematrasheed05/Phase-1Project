@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Update the current page number in the pagination span
     paginationContainer.querySelector('span').textContent = currentPage;
   }
-  / Event listener for the search button
+  // Event listener for the search button
   searchBtn.addEventListener('click', function () {
     const searchTerm = searchInput.value.toLowerCase();
 
@@ -119,4 +119,15 @@ document.addEventListener('DOMContentLoaded', function () {
       displayProducts(currentPage);
     }
   });
+// Event listener for next page button
+nextPageBtn.addEventListener('click', function () {
+  const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+  if (currentPage < totalPages) {
+    currentPage++;
+    displayProducts(currentPage);
+  }
+});
 
+// Initial fetch and display products
+fetchAndDisplayProducts();
+});
