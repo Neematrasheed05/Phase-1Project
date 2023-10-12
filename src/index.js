@@ -7,4 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const nextPageBtn = document.getElementById('next-page');
   const paginationContainer = document.getElementById('pagination-container');
 
- 
+  let currentPage = 1;
+  const productsPerPage = 10; // Number of products to display per page
+  let filteredProducts = []; // Array to hold the filtered products
