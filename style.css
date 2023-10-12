@@ -41,6 +41,12 @@ border-radius: 10px;
     font-style: oblique;
 
 }
+.makeup-card img{
+ border-radius: 10px 10px 0px 0px;
+  height: 30em;
+  width: fit-content;
+  display: block;
+}
 .procuct-card img{
 border-radius: 10px 10px 0px 0px;
   height: 30em;
