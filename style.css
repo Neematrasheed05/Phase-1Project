@@ -35,6 +35,12 @@ border-radius: 10px;
   margin-right: 15px;
   margin-top: 20px;
 }
+  
+.makeup-card{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+
+}
 .procuct-card img{
 border-radius: 10px 10px 0px 0px;
   height: 30em;
