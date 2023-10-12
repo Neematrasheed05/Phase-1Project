@@ -103,10 +103,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Filter products based on the search term
     filteredProducts = searchTerm
-      ? filteredProducts.filter((product) =>
+       ?filteredProducts.filter((product) =>
           product.name.toLowerCase().includes(searchTerm)
         )
-      : data;
+      :data;
 
     currentPage = 1; // Reset to the first page
     displayProducts(currentPage);
