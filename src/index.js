@@ -62,12 +62,16 @@ document.addEventListener('DOMContentLoaded', function () {
       const productPrice = document.createElement('p');
       productPrice.innerHTML = `<strong>Price:</strong> $${product.price}`;
 
+      const productDescription = document.createElement('p');
+      productDescription.innerHTML = `<strong>Description:</strong> ${product.description}`;
+
       // Append elements to the product card
       productCard.appendChild(productImage);
       productCard.appendChild(productName);
       productCard.appendChild(productBrand);
       productCard.appendChild(productType);
       productCard.appendChild(productPrice);
+      productCard.appendChild(productDescription);
 
       // Append the product card to the makeup card container
       makeupCard.appendChild(productCard);
