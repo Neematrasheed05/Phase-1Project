@@ -27,3 +27,31 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('Error fetching data:', error);
       });
   }
+  // Function to display products for a given page
+  function displayProducts(page) {
+    // Calculate the start and end indices for the current page
+    const startIndex = (page - 1) * productsPerPage;
+    const endIndex = startIndex + productsPerPage;
+
+    // Clear previous products
+    makeupCard.innerHTML = '';
+
+    // Loop through products for the current page and display them
+    for (let i = startIndex; i < endIndex && i < filteredProducts.length; i++) {
+      const product = filteredProducts[i];
+
+      // Create a makeup card
+      const productCard = document.createElement('div');
+      productCard.classList.add('product-card');
+
+      // Create an image element
+      const productImage = document.createElement('img');
+      productImage.src = product.image_link;
+      productImage.alt = 'Makeup Product Image';
+
+      // Create product details
+      const productName = document.createElement('p');
+      productName.innerHTML = `<strong>Product Name:</strong> ${product.name}`;
+
+      const productBrand = document.createElement('p');
+      productBrand.innerHTML = `<strong>Brand:</strong> ${product.brand}`;
