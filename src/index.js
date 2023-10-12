@@ -72,3 +72,29 @@ document.addEventListener('DOMContentLoaded', function () {
       // Append the product card to the makeup card container
       makeupCard.appendChild(productCard);
     }
+    // Update pagination
+    updatePagination();
+  }
+
+  // Function to update pagination buttons
+  function updatePagination() {
+    const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
+
+    // Show/hide previous page button
+    if (currentPage === 1) {
+      prevPageBtn.disabled = true;
+    } else {
+      prevPageBtn.disabled = false;
+    }
+
+    // Show/hide next page button
+    if (currentPage === totalPages) {
+      nextPageBtn.disabled = true;
+    } else {
+      nextPageBtn.disabled = false;
+    }
+
+    // Update the current page number in the pagination span
+    paginationContainer.querySelector('span').textContent = currentPage;
+  }
+
