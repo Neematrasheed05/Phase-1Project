@@ -55,3 +55,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
       const productBrand = document.createElement('p');
       productBrand.innerHTML = `<strong>Brand:</strong> ${product.brand}`;
+
+      const productType = document.createElement('p');
+      productType.innerHTML = `<strong>Type:</strong> ${product.product_type}`;
+
+      const productPrice = document.createElement('p');
+      productPrice.innerHTML = `<strong>Price:</strong> $${product.price}`;
+
+      // Append elements to the product card
+      productCard.appendChild(productImage);
+      productCard.appendChild(productName);
+      productCard.appendChild(productBrand);
+      productCard.appendChild(productType);
+      productCard.appendChild(productPrice);
+
+      // Append the product card to the makeup card container
+      makeupCard.appendChild(productCard);
+    }
