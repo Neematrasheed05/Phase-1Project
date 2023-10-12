@@ -3,40 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="stylesheet" />
-    <title>Make-up</title>
+    <link href="./style.css" rel="stylesheet"/>
+    <title>MakeUp</title>
 </head>
 <body>
-    <div id="top-bar">
-        <span>All about Beauty Products</span>
+    <!--Makeup details section-->
+    <div class="makeup-details">
+    <h1>MakeUp Products</h1>
+
+    <div id="search-section">
+        <input id="search-input" type="text" placeholder="Search" />
+        <button id="search-btn">Search</button>
       </div>
   
-      <div id="search-section">
-        <input type="text" placeholder="Search" />
-        <span>Search</span>
-      </div>
-      <div id="all-products">
-        <div class="a-product">
-        <div class="a-product">
-          <img
-            src="https://cdn.shopify.com/s/files/1/1338/0845/products/brain-freeze_a_800x1200.jpg?v=1502255076"
-          />
-          <div>
-            <p>Name:<span>Blotted Lip</span></p> 
-            <p>Price:<span>$10.00</span></p>
-            <p>Brand:<span>colourpop</span></p>
-            <p>Description:<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
-          </div>
-          </div>
-        </div> 
-      </div>
-  
-      <div id="pagination">
-        <button>Back</button>
+    <div class="makeup-card"> 
+        <img src="" alt="makeup poster" id="makeup-poster">
+    </div>
+    <div id = "product-attributes">
+        <p><strong></strong><span id="product-name"></span></p>
+        <p><strong> </strong><span id="product-brand"></span></p>
+        <p><strong> </strong><span id="product-type"></span></p>
+        <p><strong></strong><span id="product-price"></span></p>
+    </div>
+    </div>
+    <div id="pagination-container">
+        <button id="prev-page">Previous</button>
         <span>1</span>
-        <button>Next</button>
-      </div>
-  
+         <button id="next-page">Next</button>
+    </div>
+
     <script src="./src/index.js"></script>
 </body>
-</html>
+</html> 
