@@ -10,3 +10,20 @@ document.addEventListener('DOMContentLoaded', function () {
   let currentPage = 1;
   const productsPerPage = 10; // Number of products to display per page
   let filteredProducts = []; // Array to hold the filtered products
+
+  // Function to fetch and display products
+  function fetchAndDisplayProducts() {
+    const apiUrl = 'http://makeup-api.herokuapp.com/api/v1/products.json';
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        // Store the data in filteredProducts
+        filteredProducts = data;
+
+        // Display the first page of products
+        displayProducts(currentPage);
+      })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+      });
+  }
