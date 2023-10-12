@@ -38,5 +38,6 @@ Makeup Api enables a user to key in a specific makeup product and brands they wo
 # *My Make-up App functionality*
 
  - You can search for a make-up Product i.e "Foundation"
+ - You can search view the description of each Product
  - You can move from one page to another to view the list of products and their price tag
  - You can also see the product's Image 
